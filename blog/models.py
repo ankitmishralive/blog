@@ -3,7 +3,6 @@ from django.utils.html import format_html
 
 from tinymce.models import HTMLField
 
-
 # Create your models here.
 
 # Category Model
@@ -39,4 +38,5 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
 
