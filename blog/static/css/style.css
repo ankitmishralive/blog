@@ -1,0 +1,38 @@
+
+.bg-primary1{
+    /* background-color: #000!important ; */
+    background-color: #D3D3D3!important;
+ color: #000;
+    /* margin-top: 30px; */
+    
+ 
+}
+
+.bg-primary:hover{
+    background-color: rgb(133, 45, 133);
+}
+
+.bg-primary{
+    background-color: #000;
+}
+
+
+.materialboxed{
+    margin-top: 10px;
+}
+
+.mt20{
+    margin-top: 20px;
+}
+
+.container-custom 
+{
+    width: 80%!important;
+    margin:auto;
+}
+
+/* .item{
+
+    margin-left: 10px;
+
+} */

@@ -1,0 +1,148 @@
+{%extends 'base.html' %}
+
+{%block title%} Ankit Mishra {%endblock%} 
+
+{%block content%}
+
+
+
+
+
+
+<section class="text-gray-600 body-font  ">
+    <div class="container px-2 py-2 mx-auto flex flex-col">
+      <div class="lg:w-4/6 mx-auto">
+  
+        <div class="flex flex-col sm:flex-row mt-10">
+          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+            <div class="w-20 h-20 rounded-full inline-flex items-center justify-center ">
+              <img   width="100"   src="/media/Ankit.jpg">   
+            </div>
+            <div class="flex flex-col items-center text-center justify-center">
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Ankit Mishra </h2> <span style="color:#999">(also known as: Anki )</span>
+             
+              <p class="text-base">
+              </p>
+            </div>
+          </div>
+          <div class="sm:w-2/3 sm:pl-8 sm:py-8   mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+            <p class="leading-relaxed text-lg mb-4">
+              A driven technology proffesional with a strong foundation in web engineering and a passion for advancing my skills in Machine Learning, Natural Language Processing and Deep Learning.
+              Continuously advancing my expertise in AGI & Software through ongoing education and hands on experience with practical learning.       
+              <br>
+              <p>Connect with me @Ankkkyyyy on
+             <a href="https://twitter.com/Ankkkyyyy" class='underline text-blue-600'  target="_blank" >Twitter</a>,
+             <a href="https://github.com/Ankkkyyyy" class='underline text-blue-600'  target="_blank" >Github</a>,
+             <a href="https://www.linkedin.com/in/Ankkkyyyy/" class='underline text-blue-600'  target="_blank" >LinkedIn</a>,
+             </p>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--  -->
+
+
+ <div class="container custom" >
+
+    <div class="owl-carousel" > 
+
+
+        {% for cat in cats %}
+
+        <div class="card" style="margin-left: 10px;" >
+
+            <div class="img-container" >
+                <img  src="/media/{{cat.image}}" style="height: 200px;"  class="responsive-img"> 
+            </div>
+
+            <div class="card-content">
+                <div class="card-title">
+                {{cat.title}}
+            </div>
+
+            <p class="truncate"> {{cat.description }} </p>
+
+            <div class="container center-align">
+                <a href="/category/{{cat.url}}"  class="btn bg-primary mt20" >VIEW</a>
+            </div>
+
+
+            </div>
+
+
+    
+        </div>
+
+
+        {%endfor%}
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+    <div class="cols s12 m8">
+        <h3 class="center" style="margin-bottom: 5%;" > <u>Most Recent </u> </h3>
+        <br>  <br> 
+        {% for p in posts %}
+
+        
+
+    <div class="row">
+
+       <h5 style="text-align: center;" > <u> {{p.title| truncatewords:60  | safe }}  </u></h5>       
+       <div class="col s12 m4">
+        <img src="/media/{{p.image}}" class="responsive-img mt20" alt=""> </div>
+  
+        <div class="col s12 m8" style="margin-bottom: 5%;">
+        {{p.content | truncatewords:30  | safe }}
+
+        <div class="mt20">
+            <a href="/blog/{{p.url}}" class="btn bg-primary"  >ReadMore</a>
+        </div>
+    
+    </div>
+    
+    <!-- <div class="col s12 m4">
+        <img src="/media/{{p.image}}" class="responsive-img mt20" alt="">
+    </div> -->
+
+
+
+
+    </div>
+
+    <hr size="10" width="100%" >  
+        {% endfor %}
+
+      
+
+
+    </div>
+
+    
+
+
+
+</div>
+
+</div>
+
+
+{%endblock%}

@@ -1,0 +1,69 @@
+
+{%extends 'base.html' %}
+
+{%block title%} Ankit Mishra|Post {%endblock%} 
+
+{%block content%}
+
+
+<div class="container-custom">
+    <div class="row">
+        <div class="col s12 m10">
+            <h2>{{readmore.title}}</h2>
+           
+            <p>{{readmore.cat.title }}</p>
+
+            <img src="/media/{{readmore.image}}" class="responsive-img"  style="max-height: 250px;width: 80%;object-fit: cover; " >
+
+            <br>
+
+            <p>{{readmore.content|safe}}</p>
+
+        </div>
+        
+
+<div class="col s12 m2">
+
+    {% for cat in cats %}
+
+        <div class="card" style="margin-left: 10px; min-width: 200px; " >
+
+            <div class="img-container center-align" >
+                <img  src="/media/{{cat.image}}" class="responsive-img"> 
+            </div>
+
+            <div class="card-content center-align">
+                <div class="card-title center-align">
+                {{cat.title}}
+            </div>
+
+            <p class="truncate"> {{cat.description }} </p>
+
+            <div class="container center-align">
+                <a href="/category/{{cat.url}}"  class="btn bg-primary mt20" >VIEW</a>
+            </div>
+
+
+            </div>
+
+
+    
+        </div>
+
+
+        {%endfor%}
+
+
+
+
+</div>
+
+
+    </div>
+</div>
+
+
+
+
+
+{%endblock%}
