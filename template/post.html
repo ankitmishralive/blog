@@ -4,65 +4,37 @@
 {%block title%} Ankit Mishra|Post {%endblock%} 
 
 {%block content%}
-
-
-<div class="container-custom">
-    <div class="row">
-        <div class="col s12 m10">
-            <h2>{{readmore.title}}</h2>
-           
-            <p>{{readmore.cat.title }}</p>
-
-            <img src="/media/{{readmore.image}}" class="responsive-img"  style="max-height: 250px;width: 80%;object-fit: cover; " >
-
-            <br>
-
-            <p>{{readmore.content|safe}}</p>
-
+<div class="container-custom mt-8">
+    <div class="flex flex-wrap">
+      <div class="w-full sm:w-12/12 md:w-10/12">
+        <h2 class="mb-4 text-2xl font-semibold">{{ readmore.title }}</h2>
+        <p> From Category : {{ readmore.cat.title }}</p>  <br> 
+        <img src="/media/{{ readmore.image }}" class="w-full max-h-250 object-cover" style="width: 80%;" alt="">
+        <br>
+        <p>{{ readmore.content|safe }}</p>
+      </div>
+  
+      <div class="w-full sm:w-12/12 md:w-2/12">
+        {% for cat in cats %}
+        <div class="card mx-2 mb-8" style="min-width: 200px;">
+          <div class="img-container flex justify-center">
+            <img src="/media/{{ cat.image }}" class="w-full" alt="">
+          </div>
+          <div class="card-content text-center">
+            <div class="card-title font-semibold">
+              {{ cat.title }}
+            </div>
+            <p class="truncate">{{ cat.description }}</p>
+            <div class="container mx-auto">
+              <a href="/category/{{ cat.url }}" class="btn bg-black text-white px-3 rounded">VIEW</a>
+            </div>
+          </div>
         </div>
-        
-
-<div class="col s12 m2">
-
-    {% for cat in cats %}
-
-        <div class="card" style="margin-left: 10px; min-width: 200px; " >
-
-            <div class="img-container center-align" >
-                <img  src="/media/{{cat.image}}" class="responsive-img"> 
-            </div>
-
-            <div class="card-content center-align">
-                <div class="card-title center-align">
-                {{cat.title}}
-            </div>
-
-            <p class="truncate"> {{cat.description }} </p>
-
-            <div class="container center-align">
-                <a href="/category/{{cat.url}}"  class="btn bg-primary mt20" >VIEW</a>
-            </div>
-
-
-            </div>
-
-
-    
-        </div>
-
-
-        {%endfor%}
-
-
-
-
-</div>
-
-
+        {% endfor %}
+      </div>
     </div>
-</div>
-
-
+  </div>
+  
 
 
 
