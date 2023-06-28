@@ -7,3 +7,4 @@ sqlparse==0.4.4
 typing-extensions==4.6.3
 gunicorn
 dj-database-url==2.0.0
+psycopg2==2.9.6
