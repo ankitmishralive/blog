@@ -1,1 +1,7 @@
-pathlib~=1.0.1
+asgiref==3.7.2
+Django==3.2.5
+django-tinymce==3.6.1
+Pillow==8.2.0
+pytz==2023.3
+sqlparse==0.4.4
+typing-extensions==4.6.3

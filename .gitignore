@@ -1,0 +1,4 @@
+.venv/
+mythoughts/__pycache__/
+mythoughts/blog/__pycache__/
+
