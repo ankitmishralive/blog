@@ -6,9 +6,9 @@ from tinymce.models import HTMLField
 # Create your models here.
 
 # Category Model
+from django.db import transaction
 
-
-
+@transaction.atomic
 class Category(models.Model):
     cat_id = models.AutoField(primary_key=True)
     title = models.CharField(max_length=100)
@@ -25,7 +25,7 @@ class Category(models.Model):
 
 
 # Post Mode 
-
+@transaction.atomic
 class Post(models.Model):
     post_id = models.AutoField(primary_key=True)
     title=models.CharField(max_length=200)
