@@ -136,8 +136,8 @@ STATIC_URL = 'staticfiles/'
 
 # STATICFILES_DIRS = [BASE_DIR/"static" ]
 # STATICFILES_DIRS = [BASE_DIR/"static" ]
-STATIC_ROOT = BASE_DIR/"staticfiles"
-# STATIC_ROOT = "../staticfiles/"
+# STATIC_ROOT = BASE_DIR/"staticfiles"
+STATIC_ROOT = "../staticfiles/"
 
 
 MEDIA_URL = '/media/'
