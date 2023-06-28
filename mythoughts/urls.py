@@ -31,3 +31,8 @@ urlpatterns = [
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 urlpatterns += staticfiles_urlpatterns()
+from django.contrib import admin
+
+admin.site.site_header = 'Are you Ankit? if No then Run away.'          
+       
+admin.site.site_title = "Ankit's Blog Panel"
