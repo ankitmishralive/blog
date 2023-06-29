@@ -7,12 +7,11 @@
     <title>{% block title %}Ankit Mishra{% endblock %}</title>
 
     {% load meta %}
-    {% meta %}
-        {% block meta_title %}<meta name="title" content="Ankit Mishra">{% endblock %}
-        {% block meta_description %}<meta name="description" content="Sharing some part of Life, Views & Insights with y'all">{% endblock %}
-        {% block meta_image %}<meta property="og:image" content="../media/ll.png">{% endblock %}
-        {% block meta_url %}<meta property="og:url" content="https://www.theankitmishra.live">{% endblock %}
-    {% endmeta %}
+    {% meta title="Ankit Mishra" %}
+    {% meta description="Sharing some part of Life, Views & Insights with y'all" %}
+    {% meta image="../media/ll.png" %}
+    {% meta url="https://www.theankitmishra.live" %}
+    
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
