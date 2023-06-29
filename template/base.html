@@ -4,34 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{%block title%} {%endblock%} </title>
-    
-    <!-- <meta property="og:title" content="Ankit Mishra">
-    <meta property="og:description" content="Sharing some part of Life,Views & Insights with y'all">
-    <meta property="og:image" content="../media/ll.png">
-    <meta property="og:url" content="wwww.theankitmishra.live"> -->
-    
+    <title>{% block title %}Ankit Mishra{% endblock %}</title>
+
     {% load meta %}
     {% meta %}
-        {% block meta_title %}Ankit Mishra{% endblock %}
-        {% block meta_description %}Sharing some part of Life, Views & Insights with y'all{% endblock %}
-        {% block meta_image %}"../media/ll.png"{% endblock %}
-        {% block meta_url %}https://www.theankitmishra.live{% endblock %}
+        {% block meta_title %}<meta name="title" content="Ankit Mishra">{% endblock %}
+        {% block meta_description %}<meta name="description" content="Sharing some part of Life, Views & Insights with y'all">{% endblock %}
+        {% block meta_image %}<meta property="og:image" content="../media/ll.png">{% endblock %}
+        {% block meta_url %}<meta property="og:url" content="https://www.theankitmishra.live">{% endblock %}
     {% endmeta %}
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified JavaScript -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     {% load static %}
 
-    <!-- <link rel="stylesheet" href="{% static 'css/style.css'%}"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%} ">
-     <link rel="icon" type="image/png" href="media/favicon.ico">
-<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
-
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'media/favicon.ico' %}">
 </head>
 <body>
 
