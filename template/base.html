@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{%block title%} {%endblock%} </title>
     
-    <meta property="og:title" content="Ankit Mishra">
+    <!-- <meta property="og:title" content="Ankit Mishra">
     <meta property="og:description" content="Sharing some part of Life,Views & Insights with y'all">
     <meta property="og:image" content="../media/ll.png">
-    <meta property="og:url" content="wwww.theankitmishra.live">
+    <meta property="og:url" content="wwww.theankitmishra.live"> -->
     
-   
+    {% load meta %}
+    {% meta %}
+        {% block meta_title %}Ankit Mishra{% endblock %}
+        {% block meta_description %}Sharing some part of Life, Views & Insights with y'all{% endblock %}
+        {% block meta_image %}"../media/ll.png"{% endblock %}
+        {% block meta_url %}https://www.theankitmishra.live{% endblock %}
+    {% endmeta %}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified JavaScript -->
 

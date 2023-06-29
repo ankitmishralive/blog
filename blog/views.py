@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from blog.models import Category, Post
+
+
 # Create your views here.
 
 def home(request):
@@ -31,3 +33,6 @@ def category(request,url):
     posts = Post.objects.filter(cat=category)
 
     return render(request,"Category.html",{'cat':category,'posts':posts})
+
+
+
