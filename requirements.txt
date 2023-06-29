@@ -6,4 +6,3 @@ pytz==2023.3
 sqlparse==0.4.4
 typing-extensions==4.6.3
 gunicorn
-django-meta==2.2.0
