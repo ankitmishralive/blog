@@ -39,34 +39,32 @@
 </section>
 
 
-
-
-
-  <div class="container mx-auto">
-    <div class="owl-carousel">
-      {% for cat in cats %}
-      <div class="card mx-auto bg-white rounded-lg shadow-lg overflow-hidden max-w-sm">
-        <div class="img-container">
-          <img src="/media/{{cat.image}}" style="height: 200px;" class="w-full h-auto" alt="">
-        </div>
-        <div class="card-content p-4">
-          <h5 class="text-xl font-semibold">{{cat.title}}</h5>
-          <p class="mt-2 text-gray-700">{{cat.description}}</p>
-          <div class="flex justify-center mt-4">
-            <a href="/category/{{cat.url}}" class="btn bg-black text-white py-2 px-4 rounded">VIEW</a>
-          </div>
+{% comment %}
+<div class="container mx-auto">
+  <div class="owl-carousel">
+    {% for cat in cats %}
+    <div class="card mx-auto bg-white rounded-lg shadow-lg overflow-hidden max-w-sm">
+      <div class="img-container">
+        <img src="/media/{{cat.image}}" style="height: 200px;" class="w-full h-auto" alt="">
+      </div>
+      <div class="card-content p-4">
+        <h5 class="text-xl font-semibold">{{cat.title}}</h5>
+        <p class="mt-2 text-gray-700">{{cat.description}}</p>
+        <div class="flex justify-center mt-4">
+          <a href="/category/{{cat.url}}" class="btn bg-black text-white py-2 px-4 rounded">VIEW</a>
         </div>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
+</div>
+{% endcomment %}
 
-  
 
 
 <div class="container mx-auto">
   <div class="grid grid-cols-1 gap-8">
-    <h3 class="text-center text-2xl font-bold mb-5 underline">Most Recent</h3>
+    <h3 class="text-center text-2xl font-bold mb-5 underline">Most Recent Publications</h3>
 
     {% for p in posts reversed %}
     <div class="border border-gray-300 rounded p-6">
