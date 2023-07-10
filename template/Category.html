@@ -16,7 +16,7 @@
     
     <div class="flex flex-col items-center">
         {% for p in posts %}
-        <a href="/blog/{{ p.url }}" class="block mt-4 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">{{ p.title }}</a>
+        <a href="/insider/{{ p.url }}" class="block mt-4 px-4 py-2 border border-gray-300 rounded hover:bg-gray-100">{{ p.title }}</a>
         {% empty %}
         <h3 class="mt-4">Currently, there are no posts in this category.</h3>
         {% endfor %}
