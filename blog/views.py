@@ -34,5 +34,6 @@ def category(request,url):
 
     return render(request,"Category.html",{'cat':category,'posts':posts})
 
-
+def aboutme(request):
+    return render(request,'aboutme.html')
 
