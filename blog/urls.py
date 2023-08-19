@@ -9,6 +9,6 @@ urlpatterns = [
     path('',home),
     path('insider/<slug:url>',post),
     path('category/<slug:url>',category),
-    path('about-me',aboutme)
+    path('more-about-me/',aboutme)
     # path()
 ]
