@@ -7,26 +7,43 @@
     <!-- Include Tailwind CSS CDN -->
     <link rel="icon" type="image/png" href="media/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        // Function to show the project description
+        function showDescription(name,description) {
+
+
+        //   const description = "Our web application is designed to help you identify and filter out spam SMS and emails from your inbox. The model has a Precision Rate of 100% and an Accuracy Score of 97%. We used Multinomial Naive Bayes for the algorithm and built and deployed the model on Flask. We're also sharing its public API for anyone interested in trying it out.";
+      
+         
+          swal(name,description);
+
+        }
+ 
+      </script>
+      
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-black text-gray-200">
 
     <!-- Centered content -->
-    <div class="flex items-center justify-center min-h-screen">
+    <div class="pt-12 sm:pt-16 lg:pt-20">
+        <div class="flex items-center justify-center min-h-screen">
 
         <!-- Resume container -->
         <div class="container mx-auto p-4">
 
             <!-- Header section -->
             <header class="text-center">
-                <h2 class="text-4xl font-extrabold text-gray-800 sm:text-5xl lg:text-6xl">
+                <h2 class="text-4xl font-extrabold text-gray-200 sm:text-5xl lg:text-6xl">
                     Hi, I'm Ankit!
                 </h2>
-                <p class="mt-4 text-lg text-gray-600 md:leading-relaxed md:text-[23px] md:mt-8">
+                <p class="mt-4 text-lg text-gray-200 md:leading-relaxed md:text-[23px] md:mt-8">
                     I'm a Machine Learning Engineer & a Full Stack Developer. I can help you in building and scaling software. 
                 </p>
                 <div class="mx-auto py-8 px-6 md:flex md:items-center md:justify-between lg:px-8">
                     <div class="flex justify-center space-x-6 md:order-2 mx-auto">
-                        <a class="text-gray-700 hover:text-black" href="https://twitter.com/ankitmishralive">
+                        <a class="text-gray-200 hover:text-black" href="https://twitter.com/ankitmishralive">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                                 class="w-8 h-8"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                 <path fill="currentColor"
@@ -34,7 +51,7 @@
                             </svg>
 
                         </a>
-                        <a class="text-gray-700 hover:text-black" href="https://www.linkedin.com/in/ankitmishralive/">
+                        <a class="text-gray-200 hover:text-black" href="https://www.linkedin.com/in/ankitmishralive/">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
                                 class="w-8 h-8"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                 <path fill="currentColor"
@@ -47,155 +64,428 @@
             </header>
 
 
-                    <!-- Education section -->
-                    <section class="mt-8">
-                        <h2 class="text-2xl font-bold">Education</h2>
-                        <!-- Education item 1 -->
-                        <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                            <h3 class="text-xl font-bold">Btech in Artificial Intelligence & Machine Learning</h3>
-                            <p class="text-lg font-medium">Thakur College of Engineering & Technology | 2022 - 2025</p>
+            
+            <div class="max-w-5xl mx-auto px-4 lg:px-8 py-8 lg:py-12 bg-[#ecf3ff] bg-blue-100">
+                <div class="">
+                    <h2 class="text-2xl font-extrabold text-gray-800 text-center md:text-4xl ">
+                        
+                        Strap in, because this is where creativity takes the front seat
+                    </h2>
+                   
+                </div>
+            </div>
+
+
+            <section class="text-gray-600 body-font overflow-hidden">
+                <div class="container px-5 py-24 ">
+                    <h1 class="text-3xl font-medium text-gray-200 title-font mb-2">Education</h1>
+                    <br>
+                    <div class="-my-8 divide-y-2 divide-gray-100">
+                        <div class="py-8 flex flex-wrap md:flex-nowrap">
+                            <div class="md:flex-grow">
+                                <h2 class="text-xl font-medium text-gray-200 title-font mb-2">Btech in Artificial Intelligence & Machine Learning</h2>
+                                <p class="leading-relaxed text-gray-300">Thakur College of Engineering & Technology</p>
+                                <p class="leading-relaxed text-gray-300">2022 - 2025</p>
+                                <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.tcetmumbai.in/">Learn More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
             
-                        <!-- Education item 2 -->
-                        <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                            <h3 class="text-xl font-bold">Diploma in Computer Science Engineering</h3>
-                            <p class="text-lg font-medium">S.H Jondhale Polytechnic | 2019 - 2022</p>
+                        <div class="py-4 flex flex-wrap md:flex-nowrap">
+                            <div class="md:flex-grow">
+                                <h2 class="text-xl font-medium text-gray-200 title-font mb-2">Diploma in Computer Science Engineering</h2>
+                                <p class="leading-relaxed text-gray-300">S.H Jondhale Polytechnic</p>
+                                <p class="leading-relaxed text-gray-300">2019 - 2022</p>
+                                <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.tcetmumbai.in/">Learn More
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
-                        <!-- Add more education items as needed -->
-                    </section>
-          
-
-            <!-- Experience section -->
-            <section class="mt-8">
-                <h2 class="text-2xl font-bold">Experience</h2>
-                <!-- Experience item 1 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Machine Learning Developer - TCET OpenSource</h3>
-                    <p class="text-lg font-medium">Mumbai | Hybrid | July 2023 - July 2023</p>
-                    <ul class="list-disc pl-8 mt-2">
-                        <li>Worked with Huggingface pretrained models for review & comment sentiments.</li>
-                        <li>Contributed & Solved the functionality issue of Resume Screener Web Application by creating a LinkedIn Profile Scrapper & Analyzer Function.</li>
-                        <!-- Add more as needed -->
-                    </ul>
-                </div>
-
-                <!-- Experience item 2 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Full Stack Developer - Verbient Technologies Private Limited</h3>
-                    <p class="text-lg font-medium">Jaipur | Remote | Nov 2022 - Apr 2023</p>
-                    <ul class="list-disc pl-8 mt-2">
-                        <li>Worked on PHP & MySQL for building robust backend systems.</li>
-                        <li>Developed interactive user interfaces using JavaScript, HTML, CSS & Bootstrap.</li>
-                        <li>Enhanced user interactions and implemented business logic.</li>
-                        <li>Implemented client-side validation and data manipulation.</li>      
-                        <!-- Add more as needed -->
-                    </ul>
-                </div>
-                <!-- Add more experience items as needed -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Programming Instructor - Universe Simplified</h3>
-                    <p class="text-lg font-medium">Mumbai | Remote | Nov 2022 - Mar 2023</p>
-                    <ul class="list-disc pl-8 mt-2">
-                        <p>I had the privilege of teaching Python programming in the USF STEM Fellowship program. <br>
-                        It was a gratifying experience to provide all these enthusiastic learners with the knowledge and skills <br> necessary to excel in the field of programming.</p>
-                        <!-- Add more as needed -->
-                    </ul>
-                </div>
-
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Summer Internship - Ignitech</h3>
-                    <p class="text-lg font-medium">Mumbai | Remote | Aug 2021 - Sep 2021</p>
-                    <ul class="list-disc pl-8 mt-2">
-                        <li>Developed a Gender classifier ML Model, utilizing a dataset of over 1 lakh rows, and implemented the Naive Bayes algorithm for accurate predictions.</li>
-                        <li>Integrated the Gender classifier ML Model into a web application, leveraging HTML, Bootstrap, and Flask for the frontend and backend development.</li>
-                        <!-- Add more as needed -->
-                    </ul>
+                    </div>
                 </div>
             </section>
+            
+  
+          
+    
+              <section class="text-gray-600 body-font overflow-hidden">
 
-      
+       
 
-            <!-- Projects section -->
-            <section class="mt-8">
-                <h2 class="text-2xl font-bold">Projects</h2>
+                <div class="container px-5 py-24 ">
+                    <h1 class="text-3xl font-medium text-gray-200 title-font mb-2" >Experience </h1>
+                    <br> <br>
+                  <div class="flex flex-wrap -m-12">
+           
+                    <div class="p-12 md:w-1/2 flex flex-col items-start">
+                  
+                      <span class="inline-block py-3 px-3 rounded bg-indigo-50 text-indigo-500 text-lg font-medium tracking-widest">TCET Opensource</span>
+                      <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-300 mt-4 mb-4">L4 - ML Engineer</h2>
+                      <h2 class="sm:text-sm text-sm title-font font-medium text-gray-300 mt-4 mb-4"> July 2023 - Current  | Hybrid | Mumbai </h2>
+       
+                      <p class="leading-relaxed mb-8">                       
+                        Worked with Huggingface pretrained models for review & comment sentiments. <br>
+Contributed & Solved the functionality issue of Resume Screener Web Application by creating a LinkedIn Profile Scrapper & Analyzer Function.  </p>        
+                        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                        <a class="text-indigo-500 inline-flex items-center">Learn More
+                          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12h14"></path>
+                            <path d="M1 5l7 7-7 7"></path>
+                          </svg>
+                        </a>
+                      </div>
+                 
+                    </div>
+
+
+
+                    <div class="p-12 md:w-1/2 flex flex-col items-start">
+                        <span class="inline-block py-3 px-3 rounded bg-indigo-50 text-indigo-500 text-lg font-medium tracking-widest">Verbient Technologies Private Ltd.</span>
+                        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-300 mt-4 mb-4">Full Stack Web Developer Intern</h2>
+                        <h2 class="sm:text-sm text-sm title-font font-medium text-gray-300 mt-4 mb-4"> Nov 2022 - Apr 2023 |  Remote | Jaipur </h2>
+
+                        <p class="leading-relaxed mb-8">                       
+                            Worked on PHP & MySQL for building robust backend systems. <br>
+                            Developed interactive user interfaces using JavaScript, HTML, CSS & Bootstrap. <br>
+                            Enhanced user interactions and implemented business logic. <br>
+                            Implemented client-side validation and data manipulation.      <br>    </p>    
+                          <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                          <a class="text-indigo-500 inline-flex items-center">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M1 12h14"></path>
+                              <path d="M1 5l7 7-7 7"></path>
+                            </svg>
+                          </a>                     
+                        </div>
+        
+                      </div>
+
                 
-                <!-- Project card 1 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h2 class="text-xl font-bold">SMS Email Spam Detector | <a href="https://sms-spamdetector.theankitmishra.live/" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h2>
-                    <p class="text-lg font-medium">Jul 2023 - Aug 2023</p>
-                    <p>Our web application is designed to help you identify and filter out spam sms,messages,emails from your inbox.
+
+                      <div class="p-12 md:w-1/2 flex flex-col items-start">
+                        <span class="inline-block py-3 px-3 rounded bg-indigo-50 text-indigo-500 text-lg font-medium tracking-widest">Universe Simplified</span>.</span>
+                        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-300 mt-4 mb-4">Programming Instructor</h2>
+                        <h2 class="sm:text-sm text-sm title-font font-medium text-gray-300 mt-4 mb-4">  Nov 2022 - Mar 2023 |  Remote | Mumbai</h2>
+                        <p class="leading-relaxed mb-8">                       
+                            I had the privilege of teaching Python programming in the USF STEM Fellowship program. <br>
+                      It was a gratifying experience to provide all these enthusiastic learners with the knowledge and skills
+                      necessary to excel in the field of programming.   </p>    
+                          <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                          <a class="text-indigo-500 inline-flex items-center">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a>                     
+                        </div>
+                 
+                      </div>
+             
+
+                      <div class="p-12 md:w-1/2 flex flex-col items-start">
+                        <span class="inline-block py-3 px-3 rounded bg-indigo-50 text-indigo-500 text-lg font-medium tracking-widest"> Ignitech</span>.</span>
+                        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-300 mt-4 mb-4">Machine Learning Summer Internship & Trainee</h2>
+                        <h2 class="sm:text-sm text-sm title-font font-medium text-gray-300 mt-4 mb-4">  Aug 2021 - Sep 2021 | Remote | Mumbai  </h2>
+                        <p class="leading-relaxed mb-8">                       
+                            Developed a Gender classifier ML Model, utilizing a dataset of over 1 lakh rows, and implemented the Naive Bayes algorithm for accurate predictions.
+                            Integrated the Gender classifier ML Model into a web application, leveraging HTML, Bootstrap, and Flask for the frontend and backend development. </p>    
+                          <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+                          <a class="text-indigo-500 inline-flex items-center">Learn More
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M5 12h14"></path>
+                              <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                          </a>          
+
+                </div></div>      
+
+
+
+        
+
+
+                        </div>
+                    
+                      </div>
+
+
+              </section>
+
+
+        
+              
+    <section class="text-gray-600 body-font overflow-hidden">
+        <div class="container px-5 py-24 ">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-2xl font-extrabold text-gray-200 text-center md:text-4xl ">
+                    Projects & Research
+                </h2>
+            <br>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-200">Life's Too Short Not to Laugh at Your Own Errors.</p>
+              </div>
+            <br>
+            <div class="-my-8 divide-y-2 divide-gray-100">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-xl font-medium text-gray-200 title-font mb-2">SMS Email Spam Detector </h2>
+                        <p class="leading-relaxed text-gray-300">Jul 2023 - Aug 2023</p>
+                        <p class="leading-relaxed mb-8">                       
+                            Our web application is designed to help you identify and filter out spam sms,messages,emails from your inbox.
                         The Model has Precision Rate of 100% & Accuracy Score of 97%, The Algo i have used is Multinomial Naive Bayes 
                         Build & Deployed model on flask & also Sharing its public API, if anyone is interested in trying out & using the Model they can just hit the API.
-                    </p>
+                        
+                        </p>  
+                        <a class="text-indigo-500 inline-flex items-center mt-4" href="https://sms-spamdetector.theankitmishra.live/">Link 
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <br>
+    
+                <div class="-my-8 divide-y-2 divide-gray-100">
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h2 class="text-xl font-medium text-gray-200 title-font mb-2">Prepost</h2>
+                            <p class="leading-relaxed text-gray-300">Jun 2023 - Jul 2023</p>
+                            <p class="leading-relaxed mb-8">                       
+                                Prepost will keep you updated with the latest updates of the Globe. It provides real-time updates, news of 30 different categories. 
+                                Our app provides a seamless experience for accessing and downloading the most recent content from reliable sources. Whether you're interested in world news, technology updates, business insights, or entertainment news, we've got you covered. 
+                                One of the key features of Prepost is the ability for users to download updates in post form or simply copy the text & its Public API's. Check it out right now.
+                            
+                            </p>  
+                            <a class="text-indigo-500 inline-flex items-center mt-4" href="https://www.prepost.neuralberg.com">Link 
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+            <br>
+
+            </div>
+        
+
+
+
+            <div class="-my-8 divide-y-2 divide-gray-100">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-xl font-medium text-gray-200 title-font mb-2">Demographix: India's Insights Hub</h2>
+                        <p class="leading-relaxed text-gray-300">Jun 2023 - Jun 2023</p>
+                        <p class="leading-relaxed mb-8">                       
+                            The web app offers a comprehensive collection of data insights through captivating visualization graphs. it provides an array of features, allowing users to explore various aspects of India's demographic landscape. Dive into statistics such as literacy rates, population distribution across different religions,
+                             access to the internet and electricity at the district and state levels, demographic data, age group population analysis, and sex ratio trends.
+                        </p>  
+                        <a class="text-indigo-500 inline-flex items-center mt-4" href="https://demographix.theankitmishra.live/">Link 
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
                 
-                </div>
+    <br>
 
 
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h2 class="text-xl font-bold">Prepost | <a href="https://www.prepost.neuralberg.com" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h2>
-                    <p class="text-lg font-medium">Jun 2023 - Jul 2023</p>
-                    <p>Prepost will keep you updated with the latest updates of the Globe. It provides real-time updates, news of 30 different categories. Our app provides a seamless experience for accessing and downloading the most recent content from reliable sources. Whether you're interested in world news, technology updates, business insights, or entertainment news, we've got you covered. One of the key features of Prepost is the ability for users to download updates in post form or simply copy the text & its Public API's. Check it out right now.</p>
-                </div>
+                <div class="-my-8 divide-y-2 divide-gray-100">
+                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                    <div class="md:flex-grow">
+                        <h2 class="text-xl font-medium text-gray-200 title-font mb-2">theankitmishra.live</h2>
+                        <p class="leading-relaxed text-gray-300">Jan 2023 - Jan 2023</p>
+                        <p class="leading-relaxed mb-8">                       
+                            A Personal Blogging Application where i will be covering all my knowledge Created by using Django, Tailwind CSS. the webapp will be Live Soon.      </p>  
+                        <a class="text-indigo-500 inline-flex items-center mt-4" href="/"">Link 
+                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
 
-                <!-- Project card 2 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Demographix: India's Insights Hub | <a href="https://demographix.theankitmishra.live/" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h3>
-                    <p class="text-lg font-medium">Jun 2023 - Jun 2023</p>
-                    <p>The web app offers a comprehensive collection of data insights through captivating visualization graphs. it provides an array of features, allowing users to explore various aspects of India's demographic landscape. Dive into statistics such as literacy rates, population distribution across different religions, access to the internet and electricity at the district and state levels, demographic data, age group population analysis, and sex ratio trends.</p>
-                </div>
+                
 
-                <!-- Add more project cards as needed -->
-                <!-- Project card 3 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">JSON Formatter | <a href="https://json-formatter.surge.sh" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h3>
-                    <p class="text-lg font-medium">Jul 2022 - Jul 2022</p>
-                    <p>JSON formatter is a free online tool designed to assist users in formatting and beautifying their JSON codes. You can restructure your JSON with this online JSON formatter. A few clicks on your device will be enough to format your JSON code with this online tool. It is developed using React & Chakra UI technology.</p>
-                </div>
-
-                <!-- Project card 4 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Content Summarizer | <a href="https://contentsummarizer.onrender.com/" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h3>
-                    <p class="text-lg font-medium">Jun 2023 - Jun 2023</p>
-                    <p>The web app is an NLP-based text summarizer web app, just a hands-on demo app made for learning purposes via using inference APIs.</p>
-                </div>
-
-                <!-- Project card 5 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">TXT Formatter | <a href="https://txt-formatter.surge.sh" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h3>
-                    <p class="text-lg font-medium">Aug 2022 - Aug 2022</p>
-                    <p>This tool aims to help you with tasks where text formatting is needed. It's not intended to replace a word processor, but the formatting tools available here can help speed up some jobs which might otherwise be long and repetitive. TXT-formatter can also quickly tell you how many words and characters are in your text & it will also tell you the average reading time anyone will take for reading your text. This tool is built using HTML, CSS, Bootstrap & ReactJs.</p>
-                </div>
-
-                <!-- Project card 6 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Chat Visualizer | <a href="/" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h3>
-                    <p class="text-lg font-medium">Dec 2021 - May 2022</p>
-                    <p>The ChatVisualizer is a statistical analysis tool for working on the chat files that can be exported. This tool is based on data analysis and processing. Users can use this tool for analyzing their chats. It is developed using Python technology like Pandas, Numpy, Matplotlib, Flask, Streamlit & as usual front-end technologies HTML, CSS, Bootstrap.</p>
-                </div>
-
-                <!-- Project card 7 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Stranger ChatRoom | <a href="https://github.com/Ankkkyyyy/STChatRoom" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h3>
-                    <p class="text-lg font-medium">Apr 2022 - Apr 2022</p>
-                    <p>Stranger Chatroom is an example of a chat server. This project is a little bit different because in this project there is no login, no sign up. The user just has to enter the legal room name, once the user entered & claimed the room name, then it will redirect the user to the chatroom. Where the user can chat & user will require only one thing to do next is the user has to share the URL link with the person they want to have a chat. Stranger Chatroom is developed using HTML, CSS, Bootstrap, JavaScript at the frontend & PHP & MySQL technology at the backend.</p>
-                </div>
-
-                <!-- Project card 8 -->
-                <div class="mt-4 bg-white p-4 shadow-md rounded-lg">
-                    <h3 class="text-xl font-bold">Word Warriors | <a href="https://word-warriors.surge.sh" target="_blank" class="underline text-blue-500 hover:text-blue-600">Link</a></h3>
-                    <p class="text-lg font-medium">Oct 2021 - Oct 2021</p>
-                    <p>The Word Warriors is a typing thrill gaming application made by me. It helped me cover all the general applied JavaScript fundamentals.</p>     
                 </div>
 
                 <br>
 
-                <h3 class="text-3xl text-center">Updating Soon...............</h3>
-            </section>
 
+                <div class="-my-8 divide-y-2 divide-gray-100">
+                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                        <div class="md:flex-grow">
+                            <h2 class="text-xl font-medium text-gray-200 title-font mb-2"> JSON Formatter </h2>
+                            <p class="leading-relaxed text-gray-300">Jul 2022 - Jul 2022</p>
+                            <p class="leading-relaxed mb-8">                       
+                                JSON formatter is a free online tool designed to assist users in formatting and beautifying their JSON codes. You can restructure your JSON with this online JSON formatter. 
+                                A few clicks on your device will be enough to format your JSON code with this online tool. It is developed using React & Chakra UI technology.
+                      </p>  
+                            <a class="text-indigo-500 inline-flex items-center mt-4" href="https://json-formatter.surge.sh"">Link 
+                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+               
+
+                    </div>
+
+                    <br>
+
+                    <div class="-my-8 divide-y-2 divide-gray-100">
+                        <div class="py-8 flex flex-wrap md:flex-nowrap">
+                            <div class="md:flex-grow">
+                                <h2 class="text-xl font-medium text-gray-200 title-font mb-2"> TXT Formatter </h2>
+                                <p class="leading-relaxed text-gray-300">Aug 2022 - Aug 2022</p>
+                                <p class="leading-relaxed mb-8">                       
+                                    This tool aims to help you with tasks where text formatting is needed. It's not intended to replace a word processor, but the formatting tools available here can help speed up some jobs which might otherwise be long and repetitive. TXT-formatter can also quickly tell 
+                                    you how many words and characters are in your text & it will also tell you the average reading time anyone will take for reading your text. This tool is built using HTML, CSS, Bootstrap & ReactJs.
+                          </p>  
+                                <a class="text-indigo-500 inline-flex items-center mt-4" href="https://txt-formatter.surge.sh"">Link 
+                                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="M12 5l7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+    
+    
+                        </div>
+
+                        
+                        <br>
+
+
+                        <div class="-my-8 divide-y-2 divide-gray-100">
+                            <div class="py-8 flex flex-wrap md:flex-nowrap">
+                                <div class="md:flex-grow">
+                                    <h2 class="text-xl font-medium text-gray-200 title-font mb-2"> Chat Visualizer  </h2>
+                                    <p class="leading-relaxed text-gray-300">Dec 2021 - May 2022</p>
+                                    <p class="leading-relaxed mb-8">                       
+                                        The ChatVisualizer is a statistical analysis tool for working on the chat files that can be exported. This tool is based on data analysis and processing.
+                                        Users can use this tool for analyzing their chats. It is developed using Python technology like Pandas, Numpy, Matplotlib, Flask, Streamlit & as usual front-end technologies HTML, CSS, Bootstrap.
+                                    </p>  
+                                    <a class="text-indigo-500 inline-flex items-center mt-4" href="/"">Link 
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+        
+                             
+        
+                            </div>
+
+
+                            <br>
+                            <div class="-my-8 divide-y-2 divide-gray-100">
+                                <div class="py-8 flex flex-wrap md:flex-nowrap">
+                                    <div class="md:flex-grow">
+                                        <h2 class="text-xl font-medium text-gray-200 title-font mb-2"> Stranger ChatRoomzer  </h2>
+                                        <p class="leading-relaxed text-gray-300">Apr 2022 - Apr 2022</p>
+                                        <p class="leading-relaxed mb-8">     
+
+                                            Stranger Chatroom is an example of a chat server. This project is a little bit different because in this project there is no login, no sign up. 
+                                            The user just has to enter the legal room name, once the user entered & claimed the room name, then it will redirect the user to the chatroom. Where the user can chat & user will require only one thing to do next is the user has to share the URL link with the person they want to have a chat. Stranger Chatroom is developed using HTML, CSS, Bootstrap, JavaScript at the frontend & PHP & MySQL technology at the backend.
+                                      
+                                        </p>  
+                                        <a class="text-indigo-500 inline-flex items-center mt-4" href="https://github.com/Ankkkyyyy/STChatRoom"">Link 
+                                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M5 12h14"></path>
+                                                <path d="M12 5l7 7-7 7"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+            
+                             
+            
+                                </div>
+
+                                <br>
+
+                                <div class="-my-8 divide-y-2 divide-gray-100">
+                                    <div class="py-8 flex flex-wrap md:flex-nowrap">
+                                        <div class="md:flex-grow">
+                                            <h2 class="text-xl font-medium text-gray-200 title-font mb-2"> Word Warriors </h2>
+                                            <p class="leading-relaxed text-gray-300">Oct 2021 - Oct 2021</p>
+                                            <p class="leading-relaxed mb-8">     
+    
+                                                The Word Warriors is a typing thrill gaming application made by me. It helped me cover all the general applied JavaScript fundamentals
+                                            </p>  
+                                            <a class="text-indigo-500 inline-flex items-center mt-4" href="https://word-warriors.surge.sh"">Link 
+                                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path d="M5 12h14"></path>
+                                                    <path d="M12 5l7 7-7 7"></path>
+                                                </svg>
+                                            </a>
+                                        </div>
+                
+                                        <br>
+                
+                                    </div>
+    
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+      
             <!-- Skills section -->
         
         </div>
     </div>
 
 
-    {% include 'footer.html' %}
+
+            
+          
+
+</div>
+
+
+
+<footer class="text-gray-200 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a href="/admin" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-200">
+    
+        <span  class="ml-3 text-xl">Ankit Mishra</span>
+      </a>
+      <p class="text-sm text-gray-100 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Ankit Mishra-
+        <a href="https://twitter.com/knyttneve" class="text-gray-200 ml-1" rel="noopener noreferrer" target="_blank">@ankitmishralive</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        
+        <a class="ml-3 text-gray-100" href="https://twitter.com/ankitmishralive" target="_blank">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+      
+        <a class="ml-3 text-gray-100"  href="https://www.linkedin.com/in/ankitmishralive" target="_blank">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
